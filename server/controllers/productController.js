@@ -410,7 +410,7 @@ exports.productDetails = async(req,res)=>{
   }
 
 // similar 10 products
-const similarProducts = await Product.find({category:productDetails.category,price:{$lte:productDetails.price},_id:{$ne:productDetails._id}}).sort({totalBuyers:-1}).limit(10);
+const similarProducts = await Product.find({category:productDetails.category,price:{$lte:productDetails.price},_id:{$ne:productDetails._id}}).sort({totalBuyers:-1}).limit(10).populate("reviews");
 
 return res.status(200).json({
   success:true,
