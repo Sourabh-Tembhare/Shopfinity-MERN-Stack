@@ -183,7 +183,7 @@ if (!specialCharRegex.test(fromData.password)) {
               
                     onChange={changeHandler}
                     className='bg-richblack-700 py-2 outline-none rounded-md px-2' /> 
-                 {openEye1 ?  <FaRegEye onClick={()=>setOpenEye1(!openEye1)} size={23} className='absolute lg:top-9 lg:left-44 cursor-pointer right-4 top-9'/> :  <FaRegEyeSlash size={23} onClick={()=>setOpenEye1(!openEye1)} className='absolute top-9 left-44 cursor-pointer'/>}
+                 {openEye1 ?  <FaRegEye onClick={()=>setOpenEye1(!openEye1)} size={23} className='absolute lg:top-9  cursor-pointer right-4 top-9'/> :  <FaRegEyeSlash size={23} onClick={()=>setOpenEye1(!openEye1)} className='absolute top-9 right-4 cursor-pointer'/>}
                        
         </div>
         <div className='flex flex-col relative gap-1 text-richblack-50'>
@@ -200,7 +200,7 @@ if (!specialCharRegex.test(fromData.password)) {
              
                   onChange={changeHandler}
                    className='bg-richblack-700 py-2 outline-none rounded-md px-2' /> 
-                  {openEye2 ?  <FaRegEye onClick={()=>setOpenEye2(!openEye2)} size={23} className='absolute lg:top-9 lg:left-44 right-4 top-9 cursor-pointer'/> :  <FaRegEyeSlash size={23} onClick={()=>setOpenEye2(!openEye2)} className='absolute top-9 left-44 cursor-pointer'/>}
+                  {openEye2 ?  <FaRegEye onClick={()=>setOpenEye2(!openEye2)} size={23} className='absolute lg:top-9  right-4 top-9 cursor-pointer'/> :  <FaRegEyeSlash size={23} onClick={()=>setOpenEye2(!openEye2)} className='absolute top-9 right-4 cursor-pointer'/>}
                        
         </div>
       </div>
